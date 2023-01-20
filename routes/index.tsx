@@ -11,6 +11,10 @@ import { State } from "../utils/types.ts";
 
 import { Handlers, PageProps } from "$fresh/server.ts";
 
+import { config } from "https://deno.land/std/dotenv/mod.ts";
+
+await config({export: true});
+
 export const handler: Handlers<any, State> = {
   GET(_req, ctx) {
     return ctx.render({

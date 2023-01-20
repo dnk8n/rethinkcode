@@ -63,6 +63,9 @@
     "https://deno.land/std@0.152.0/async/pool.ts": "ef9eb97b388543acbf0ac32647121e4dbe629236899586c4d4311a8770fbb239",
     "https://deno.land/std@0.152.0/async/tee.ts": "bcfae0017ebb718cf4eef9e2420e8675d91cb1bcc0ed9b668681af6e6caad846",
     "https://deno.land/std@0.152.0/http/server.ts": "0b0a9f3abfcfecead944b31ee9098a0c11a59b0495bf873ee200eb80e7441483",
+    "https://deno.land/std@0.173.0/collections/filter_values.ts": "5b9feaf17b9a6e5ffccdd36cf6f38fa4ffa94cff2602d381c2ad0c2a97929652",
+    "https://deno.land/std@0.173.0/collections/without_all.ts": "a89f5da0b5830defed4f59666e188df411d8fece35a5f6ca69be6ca71a95c185",
+    "https://deno.land/std@0.173.0/dotenv/mod.ts": "6e1dbc4737e3f62a5c1f3d2a26a0e5626fb168a198375bef574fedbe86a79f20",
     "https://deno.land/x/code_block_writer@11.0.3/mod.ts": "2c3448060e47c9d08604c8f40dee34343f553f33edcdfebbf648442be33205e5",
     "https://deno.land/x/code_block_writer@11.0.3/utils/string_utils.ts": "60cb4ec8bd335bf241ef785ccec51e809d576ff8e8d29da43d2273b69ce2a6ff",
     "https://deno.land/x/denoflate@1.2.1/mod.ts": "f5628e44b80b3d80ed525afa2ba0f12408e3849db817d47a883b801f9ce69dd6",
@@ -145,5 +148,47 @@
     "https://esm.sh/v103/twind@0.16.17/deno/twind.js": "6af0efdf1f8fba49e77999216427e980ac11bf9d4a47c5c88f940bab6ab0a774",
     "https://esm.sh/v103/twind@0.16.17/sheets/sheets.d.ts": "eb32acf2e10ffe86b5af8cfeac0e7ee9cf6445e74a5570cef9bd238ae62f150b",
     "https://esm.sh/v103/twind@0.16.17/twind.d.ts": "1ffc2cb66b7542a0b77727c587089e53cb53043ca6706c12327bf76f4a72f26e"
+  },
+  "npm": {
+    "specifiers": {
+      "@sendgrid/mail@^7.7.0": "@sendgrid/mail@7.7.0",
+      "uuid@^9.0.0": "uuid@9.0.0"
+    },
+    "packages": {
+      "@sendgrid/client@7.7.0": {
+        "integrity": "sha512-SxH+y8jeAQSnDavrTD0uGDXYIIkFylCo+eDofVmZLQ0f862nnqbC3Vd1ej6b7Le7lboyzQF6F7Fodv02rYspuA==",
+        "dependencies": {
+          "@sendgrid/helpers": "@sendgrid/helpers@7.7.0",
+          "axios": "axios@0.26.1"
+        }
+      },
+      "@sendgrid/helpers@7.7.0": {
+        "integrity": "sha512-3AsAxfN3GDBcXoZ/y1mzAAbKzTtUZ5+ZrHOmWQ279AuaFXUNCh9bPnRpN504bgveTqoW+11IzPg3I0WVgDINpw==",
+        "dependencies": { "deepmerge": "deepmerge@4.2.2" }
+      },
+      "@sendgrid/mail@7.7.0": {
+        "integrity": "sha512-5+nApPE9wINBvHSUxwOxkkQqM/IAAaBYoP9hw7WwgDNQPxraruVqHizeTitVtKGiqWCKm2mnjh4XGN3fvFLqaw==",
+        "dependencies": {
+          "@sendgrid/client": "@sendgrid/client@7.7.0",
+          "@sendgrid/helpers": "@sendgrid/helpers@7.7.0"
+        }
+      },
+      "axios@0.26.1": {
+        "integrity": "sha512-fPwcX4EvnSHuInCMItEhAGnaSEXRBjtzh9fOtsE6E1G6p7vl7edEeZe11QHf18+6+9gR5PbKV/sGKNaD8YaMeA==",
+        "dependencies": { "follow-redirects": "follow-redirects@1.15.2" }
+      },
+      "deepmerge@4.2.2": {
+        "integrity": "sha512-FJ3UgI4gIl+PHZm53knsuSFpE+nESMr7M4v9QcgB7S63Kj/6WqMiFQJpBBYz1Pt+66bZpP3Q7Lye0Oo9MPKEdg==",
+        "dependencies": {}
+      },
+      "follow-redirects@1.15.2": {
+        "integrity": "sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==",
+        "dependencies": {}
+      },
+      "uuid@9.0.0": {
+        "integrity": "sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg==",
+        "dependencies": {}
+      }
+    }
   }
 }
