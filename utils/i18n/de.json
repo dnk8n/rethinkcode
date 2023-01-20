@@ -1,0 +1,69 @@
+{
+  "me": {
+    "text": "Funemployed Engineer, currently having fun with GraphQL, React, and chatGPT while I figure out my next moves"
+  },
+  "education": {
+    "title": "Education",
+    "milestones": [
+      {
+        "title": "Durham University | MEng. Civil Engineering",
+        "date": "Oct. 2008 - Jul. 2013"
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "jobs": [
+      {
+        "name": "Info to come",
+        "role": "Mostly Backend / Cloud development using Python, SQL, AWS",
+        "date": "since 2015",
+        "tasks": [
+          "Info to come"
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "sections": [
+      {
+        "title": "Programming languages",
+        "skills": ["Python"]
+      },
+      {
+        "title": "Libraries and Frameworks",
+        "skills": [
+          "Deno",
+          "Fresh"
+        ]
+      },
+      {
+        "title": "Further knowledge",
+        "skills": [
+          "Linux",
+          "Docker",
+          "Traefik",
+          "Git",
+          "SQL",
+          "English"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects"
+  },
+  "contact": {
+    "title": "Contact",
+    "mail": "E-Mail",
+    "message": "Message",
+    "send": "Send",
+    "sent": "Thanks for the message!",
+    "failed": "Something went wrong :("
+  },
+  "footer": {
+    "left": "left placeholder",
+    "right": "right placeholder"
+  }
+}
