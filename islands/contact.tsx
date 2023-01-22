@@ -4,18 +4,18 @@ import { Translation } from "../utils/types.ts";
 const Contact = (data: { translation: Translation["contact"] }) => {
   const [status, setStatus] = useState<"sending" | "sent" | "failed">();
   const [form, setForm] = useState({
-    mail: "",
-    message: "",
+    addr: "",
+    msg: "",
   });
   const submit = useCallback(async (event: Event) => {
     event.preventDefault();
     try {
       setStatus("sending");
-      const response = await fetch("/api/mail", {
+      const response = await fetch("/api/sendform", {
         method: "POST",
         body: JSON.stringify({
-          mail: form.mail,
-          message: form.message,
+          addr: form.addr,
+          msg: form.msg,
         }),
       });
       if (response.status !== 200) throw Error;
@@ -49,7 +49,7 @@ const Contact = (data: { translation: Translation["contact"] }) => {
                   onInput={(e) => {
                     setForm((current) => ({
                       ...current,
-                      mail: e.currentTarget.value,
+                      addr: e.currentTarget.value,
                     }));
                   }}
                 />
@@ -66,7 +66,7 @@ const Contact = (data: { translation: Translation["contact"] }) => {
                   onInput={(e) => {
                     setForm((current) => ({
                       ...current,
-                      message: e.currentTarget.value,
+                      msg: e.currentTarget.value,
                     }));
                   }}
                 >

@@ -10,6 +10,7 @@ import { apply } from "twind";
 
 import twindPlugin from "$fresh/plugins/twind.ts";
 import twindConfig from "./twind.config.ts";
+import "dotenv/load.ts";
 
 await start(manifest, {
   plugins: [
