@@ -13,6 +13,7 @@ import twindConfig from "./twind.config.ts";
 import "dotenv/load.ts";
 
 await start(manifest, {
+  port: 3000,
   plugins: [
     twindPlugin({
       selfURL: new URL("./twind.config.ts", import.meta.url).href,
