@@ -33,7 +33,7 @@ export default async function* () {
     if (englishTranslation) {
       if (article.status === "published") {
         yield {
-          url: `/articles/${article.slug}/`,
+          url: `/articles/${article.slug}.html`,
           title: englishTranslation.title,
           body: englishTranslation.body,
         };
