@@ -50,4 +50,4 @@ jobs:
           git config --local user.email "github-actions@rethinkcode.org"
           git add static
           git commit -m "Automated commit of static files"
-          git push origin main
+          git push
