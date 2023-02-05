@@ -9,9 +9,10 @@
     "twind": "https://esm.sh/twind@0.16.17",
     "twind/": "https://esm.sh/twind@0.16.17/",
     "sendgrid": "https://deno.land/x/sendgrid@0.0.3/mod.ts",
-    "dotenv/": "https://deno.land/std@0.173.0/dotenv/",
-    "path": "https://deno.land/std@0.173.0/path/mod.ts",
-    "lume/": "https://deno.land/x/lume@v1.15.1/",
+    "dotenv/": "https://deno.land/std@0.176.0/dotenv/",
+    "path": "https://deno.land/std@0.176.0/path/mod.ts",
+    "media_types/": "https://deno.land/std@0.176.0/media_types/",
+    "lume/": "https://deno.land/x/lume@v1.15.2/",
     "directus": "./utils/directus.ts"
   }
 }

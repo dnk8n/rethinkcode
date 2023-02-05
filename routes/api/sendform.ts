@@ -11,7 +11,8 @@ export const handler: Handlers = {
         status: Status.InternalServerError,
       });
     }
-    const origin = req.headers.get("origin") || req.headers.get("x-forwarded-origin")
+    const origin = req.headers.get("origin") ||
+      req.headers.get("x-forwarded-origin");
     const form: { addr: string; msg: string } = await req.json();
     const from = form.addr || "Anonymous";
     const body = {

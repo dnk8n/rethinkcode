@@ -1,9 +1,10 @@
 {
   "tasks": {
-    "lume:build": "echo \"import 'lume/cli.ts'\" | deno run --unstable -A -",
+    "lume": "echo \"import 'lume/cli.ts'\" | deno run --unstable -A -",
+    "lume:build": "deno task lume",
     "lume:watch": "deno task lume:build --watch",
     "lume:serve": "deno task lume:build --serve",
-    "fresh:dev": "deno run --unstable -A --watch=static/,routes/ dev.ts",
+    "fresh:dev": "deno run --unstable -A --watch=static/,routes/,_site/ dev.ts",
     "dev": "deno task lume:watch & deno task fresh:dev"
   },
   "importMap": "./import_map.json",
