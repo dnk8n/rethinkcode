@@ -1,13 +1,13 @@
-import Menu from "../components/menu.tsx";
-import Me from "../components/me.tsx";
-import Education from "../components/education.tsx";
-import Experience from "../components/experience.tsx";
-import Skills from "../components/skills.tsx";
-import Projects from "../components/projects.tsx";
-import Contact from "../islands/contact.tsx";
-import Footer from "../components/footer.tsx";
+import Menu from "../../components/menu.tsx";
+import Me from "../../components/me.tsx";
+import Education from "../../components/education.tsx";
+import Experience from "../../components/experience.tsx";
+import Skills from "../../components/skills.tsx";
+import Projects from "../../components/projects.tsx";
+import Contact from "../../islands/contact.tsx";
+import Footer from "../../components/footer.tsx";
 
-import { State } from "../utils/types.ts";
+import { State } from "../../utils/types.ts";
 
 import { Handlers, PageProps } from "$fresh/server.ts";
 
